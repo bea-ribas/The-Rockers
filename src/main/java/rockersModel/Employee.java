@@ -1,65 +1,79 @@
 package rockersModel;
 
+import java.util.Set;
+
+import Controller.Register;
 
 public class Employee 
 {
-	String name;
-	long wiproID;
-	long clientID;
-	String wiproEmail;
-	User user;
+	private String name;
+	private Long wiproID;
+	private String clientID;
+	private String wiproEmail;
+	private User user;
 	
-	public Employee(String name, long wiproID, long clientID, String wiproEmail, User user) 
-	{
-		this.name = name;
-		this.wiproID = wiproID;
-		this.clientID = clientID;
-		this.wiproEmail = wiproEmail;
-		this.user = user;
+	private Register register;
+	
+	public Employee() {
+		
+		//this.name = name;
+		//this.clientID = clientID;
+		//this.wiproEmail = wiproEmail;
+		//this.user = user;
 	}
 	
-	public User getUser() 
-	{
+	public void registerMe() {
+		
+		//TODO: implement me  
+	}
+	
+	public Set<Employee> listCollegues(){
+		
+		return register.getEmployees();
+	}
+	
+	public User getUser() {
+		
 		return user;
 	}	
 
-	public String getName() 
-	{
+	public String getName() {
+		
 		return name;
 	}
 	
-	public void setName(String name) 
-	{
+	public void setName(String name) {
+		
 		this.name = name;
 	}
 	
-	public long getWiproID() 
-	{
-		return wiproID;
-	}
+	//public String getWiproID() {
+		
+		//return wiproID;
+	//}
 	
-	public void setWiproID(long wiproID) 
-	{
+	public void setWiproID(Long wiproID) {
+		
 		this.wiproID = wiproID;
 	}
 	
-	public long getClientID() 
-	{
+	public String getClientID() {
+		
 		return clientID;
 	}
 	
-	public void setClientID(long clientID) 
-	{
+	public void setClientID(String clientID) {
+		
 		this.clientID = clientID;
 	}
 	
-	public String getWiproEmail() 
-	{
+	public String getWiproEmail() {
+		
 		return wiproEmail;
 	}
 	
-	public void setWiproEmail(String wiproEmail) 
-	{
+	public void setWiproEmail(String wiproEmail) {
+		
 		this.wiproEmail = wiproEmail;
 	}
 }

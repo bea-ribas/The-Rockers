@@ -1,27 +1,27 @@
 package rockersModel;
 
-public class User 
-{
-	String userLogin;
-	String userPassword;
+public class User {
 	
-	public String getLogin() 
-	{
+	private String userLogin;
+	private String userPassword;
+	
+	public String getLogin() {
+		
 		return userLogin;
 	}
 	
-	public void setLogin(String login) 
-	{
+	public void setLogin(String login) {
+		
 		this.userLogin = login;
 	}
 	
-	public String getPassword() 
-	{
+	public String getPassword() {
+		
 		return userPassword;
 	}
 	
-	public void setPassword(String password) 
-	{
+	public void setPassword(String password) {
+		
 		this.userPassword = password;
 	}
 }

@@ -1,37 +1,37 @@
 package rockersModel;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Team 
-{
-	String teamName;
-	List<Employee> employee = new ArrayList<Employee>();
+public class Team {
+	
+	private String teamName;
+	private Set<Employee> employees = new HashSet<Employee>();
 
 	
-	public Team(String teamName, List<Employee> employee)
-	{
+	public Team(String teamName, Set<Employee> employee){
+		
 		this.teamName = teamName;
-		this.employee = employee;
+		this.employees = employee;
 	}
 
-	public String getTeamName() 
-	{
+	public String getTeamName() {
+		
 		return teamName;
 	}
 
-	public void setTeamName(String teamName) 
-	{
+	public void setTeamName(String teamName) {
+		
 		this.teamName = teamName;
 	}
 
-	public List<Employee> getEmployee() 
-	{
-		return employee;
+	public Set<Employee> getEmployee() {
+		
+		return employees;
 	}
 
-	public void setEmployee(List<Employee> employee) 
-	{
-		this.employee = employee;
+	public void setEmployee(Set<Employee> employee) {
+		
+		this.employees = employee;
 	}
 }
