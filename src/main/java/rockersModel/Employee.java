@@ -4,8 +4,8 @@ import java.util.Set;
 
 import Controller.Register;
 
-public class Employee 
-{
+public class Employee {
+	
 	private String name;
 	private Long wiproID;
 	private String clientID;
@@ -47,10 +47,10 @@ public class Employee
 		this.name = name;
 	}
 	
-	//public String getWiproID() {
+	public Long getWiproID() {
 		
-		//return wiproID;
-	//}
+		return wiproID;
+	}
 	
 	public void setWiproID(Long wiproID) {
 		
